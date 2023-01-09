@@ -23,7 +23,7 @@ sudo usermod -aG docker root 2>&1 | tee -a /var/log/userdata/install.log
 sudo usermod -aG docker ec2-user 2>&1 | tee -a /var/log/userdata/install.log
 
 # Installing Docker Cmpose
-echo "Installing Docker Cmpose" 2>&1 | tee -a /var/log/userdata/install.log
+echo "Installing Docker Compose" 2>&1 | tee -a /var/log/userdata/install.log
 wget https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m) 
 sudo mv docker-compose-$(uname -s)-$(uname -m) /usr/local/bin/docker-compose
 sudo chmod -v +x /usr/local/bin/docker-compose
