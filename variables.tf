@@ -22,6 +22,10 @@ variable "vpc_id" {
   default = "vpc-a11ec6dc"
 }
 
+variable "subnet_id" {
+  default = "subnet-d3f833b5"
+}
+
 variable "tags" {
   type = map(string)
   default = {
