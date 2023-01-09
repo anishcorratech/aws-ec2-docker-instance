@@ -2,7 +2,7 @@
 echo $(date +"%Y-%m-%d_%H-%M-%S") 2>&1 | tee -a /var/log/userdata/install.log
 echo "Creating Userdata Log Directories" 2>&1 | tee -a /var/log/userdata/install.log
 sudo mkdir /var/log/userdata 2>&1 | tee -a /var/log/userdata/install.log
-chod 777 /var/log/userdata 2>&1 | tee -a /var/log/userdata/install.log
+chmod 777 /var/log/userdata 2>&1 | tee -a /var/log/userdata/install.log
 
 # Update OS
 echo "Updating OS" 2>&1 | tee -a /var/log/userdata/install.log
