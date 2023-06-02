@@ -10,7 +10,7 @@ data "aws_ami" "amazon_linux" {
     /******** Out of date - AMI Image ***********
     values = ["amzn2-ami-*-x86_64-gp2"]
     ********* Out of date - AMI Image ***********/
-    values = ["al2023-ami-*-x86_64"]
+    values = ["al2023-ami-2023*-x86_64"]
 
   }
 }
