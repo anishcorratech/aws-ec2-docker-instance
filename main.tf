@@ -7,7 +7,10 @@ data "aws_ami" "amazon_linux" {
     /******** AL2022 Unstabel - RC Image ********
     values = ["al2022-ami-*-x86_64"]
     ********* AL2022 Unstabel - RC Image *******/
+    /******** Out of date - AMI Image ***********
     values = ["amzn2-ami-*-x86_64-gp2"]
+    ********* Out of date - AMI Image ***********/
+    values = ["al2023-ami-*-x86_64"]
 
   }
 }
